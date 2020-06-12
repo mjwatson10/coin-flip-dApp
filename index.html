@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <title>Coin Flip</title>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./web3.min.js"></script>
+    <script type="text/javascript" src="./abi.js"></script>
+    <script type="text/javascript" src="./Main.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+
+  </head>
+  <body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Coin Flip</h1>
+          <p class="lead">Place Your Bet and Guess the Side</p>
+        </div>
+      </div>
+      <div class="container">
+        <div>
+
+        <img id=ether src="images/ether.png" alt="">
+
+        </div>
+
+        <div class="container">
+
+          <div>
+            <button type="button" id="funds_to_add" class="btn btn-primary">Add 1 Ether To Funds</button>
+          </div>
+
+          <div class="input-group mb-3">
+            <h3>Bet Amount</h3>
+            <input type="number" name="form-control" id="bet" placeholder="100 Wei Minimum">
+          </div>
+
+            <div>
+              <h2>Heads or Tails?</h2>
+              <button type="button" id="heads" class="btn btn-primary">Heads</button>
+              <button type="button" id="tails" class="btn btn-primary">Tails</button>
+
+            </div>
+          </div>
+
+        <div>
+          <h2>Get Your Data</h2>
+          <div>
+            Your Balance: <span id="player_balance_output"></span>
+          </div>
+          <button type="button" id="get_balance_button" class="btn btn-primary">Get Balance</button>
+        </div>
+      </div>
+
+
+  </body>
+
+    <script src="./Main.js"></script>
+
+</html>
