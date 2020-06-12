@@ -36,7 +36,7 @@ $(document).ready(function() {
     var betAmount = $("#bet").val();
 
     var config = {
-      value: (betAmount.toString())
+      value: betAmount
     };
 
     contractInstance.methods.coinFlip(0).send(config)
@@ -58,7 +58,7 @@ $(document).ready(function() {
     var betAmount = $("#bet").val();
 
     var config = {
-      value: (betAmount.toString())
+      value: betAmount
     };
 
     contractInstance.methods.coinFlip(1).send(config)
